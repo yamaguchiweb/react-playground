@@ -1,5 +1,8 @@
 body {
+  margin: 0;
+  padding: 24px 0;
   font-family: sans-serif;
+  font-weight: 500;
   color: #333;
   font-size: 14px;
 }
@@ -9,26 +12,43 @@ body {
   gap: 16px;
   margin-inline: auto;
   padding: 24px 32px;
-  width: fit-content;
-  max-width: 1200px;
+  width: 400px;
   background-color: #e6f4f1;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 6px;
+}
+.inputText {
+  display: grid;
+  grid-template-columns: 64px auto;
+  align-items: center;
+  gap: 8px;
 }
 
 p {
   margin: 0;
   color: #333;
-  font-weight: bold;
   line-height: 1.2;
 }
 
 input {
-  margin: 0 8px;
   padding: 8px;
   border: 1px solid #97afb9;
   border-radius: 6px;
   font-size: 14px;
+}
+
+.sectionTitle {
+  font-weight: 600;
+  color: #167e9b;
+  text-align: center;
+}
+
+.studyRecordsList {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0 0 0 1.25em;
+  list-style: disc;
 }
 
 button {
@@ -38,7 +58,7 @@ button {
   background-color: #167e9b;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   color: #fff;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 16px;
   cursor: pointer;
   border: none;
@@ -52,8 +72,8 @@ button {
 }
 
 .totalHours {
-  padding-top: 8px;
   text-align: center;
   font-size: 16px;
   color: #167e9b;
+  font-weight: 600;
 }
